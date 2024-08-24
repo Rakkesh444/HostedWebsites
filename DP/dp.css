@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* popins */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    max-width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown .btn {
+    padding: 5px 20px;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    background-color: #302f2f;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 1s;
+    display: flex;
+    align-items: center;
+}
+
+.btn .icon {
+    position: relative;
+    left: 10px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+}
+
+.dropdown .btn:hover {
+    background-color: #141414;
+    border: 1px solid #9512ec;
+    box-shadow: 0 0 10px #9512ec;
+}
+
+.dropdown-item {
+    position: absolute;
+    top: 50px;
+    background-color: #302f2f;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.dropdown-item li {
+    list-style: none;
+    margin-left: 20px;
+    margin-top: 10px;
+    /* text-align: center; */
+
+}
+
+.dropdown-item li a {
+    text-decoration: none;
+    color: #fff;
+    transition: .2s;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+.dropdown-item li:hover {
+    background: #141414;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.dropdown-item {
+    display: none;
+
+}
+
+.show {
+    display: block;
+}
+
+h1 {
+    position: relative;
+}
