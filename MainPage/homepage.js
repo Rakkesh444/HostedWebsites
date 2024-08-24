@@ -1,9 +1,5 @@
-function test() {
-    for (var i = 0; i < 5; i++) {
-        setTimeout(function () {
-            console.log(i);
-        })
-    }
-}
-
-test()
+// Navbar
+window.addEventListener('scroll', () => {
+    let navbar = document.querySelector('nav');
+    navbar.classList.toggle("Sticky", window.scrollY > 0);
+})
